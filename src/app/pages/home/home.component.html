@@ -1,0 +1,91 @@
+<div class="banner">
+    <div class="banner_content">
+        <p>Your Perfect Home</p>
+        <p>waiting for you</p>
+        <a mat-raised-button color="accent" routerLink="project">Explore More</a>
+    </div>
+    <div class="filter">
+        <div class="location">
+            <p class="paragraph">Location</p>
+            <button class="mat-button" mat-raised-button color="accent" [matMenuTriggerFor]="location">Chennai</button>
+            <mat-menu #location="matMenu">
+            <button mat-menu-item>Mumbai</button>
+            <button mat-menu-item>Delhi</button>
+            <button mat-menu-item>Udaipur</button>
+            <button mat-menu-item>Jaipur</button>
+            </mat-menu>
+        </div>
+        <div class="Type">    
+            <p class="paragraph">Type</p>
+            <button class="mat-button" mat-raised-button color="accent" [matMenuTriggerFor]="location2">Apartment</button>
+            <mat-menu #location2="matMenu">
+            <button mat-menu-item>Flat</button>
+            <button mat-menu-item>2 BHK</button>
+            <button mat-menu-item>3 BHK</button>
+            <button mat-menu-item>PentHouse</button>
+            </mat-menu>
+        </div>
+        <div class="Type">    
+            <p class="paragraph">Range</p>
+            <button class="mat-button" mat-raised-button color="accent" [matMenuTriggerFor]="location3">2L-3L</button>
+            <mat-menu #location3="matMenu">
+            <button mat-menu-item>3-5L</button>
+            <button mat-menu-item>5-10L</button>
+            <button mat-menu-item>10-20L</button>
+            <button mat-menu-item>20-50L</button>
+            <button mat-menu-item>1-3C</button>
+            </mat-menu>
+        </div>
+        <div>
+            <button class="search" mat-raised-button>Search</button>
+        </div>
+    </div>
+</div>
+<div class="intro">
+    <div class="introduction">
+        <h3>We are the best and most</h3>
+        <h3>trusted Real State Agent</h3>
+        <p>We have helped a lot of people to find their dream home</p>
+        <ul class="benifits">
+            <li style="color:brown">20L buys have worked with us</li>
+            <li style="color:green">Professional and experience resources</li>
+            <li style="color:blue">Provide the best service for users</li>
+        </ul>
+    </div>
+    <div class="introimg">
+    </div>
+</div>
+
+<div>
+    <div class="slogon">
+        <h1 style="font-size:40px;font-weight: bold;">Special Homes</h1>
+        <p style="font-size:20px;">Find your place with an immensive photo experience and the most</p>
+        <p style="font-size:20px;">listing including thinks you won't find anywhere else</p>
+    </div>
+    <div class="homes">
+        <div *ngFor="let hd of homedata;index as i">
+            <div class="housefield" *ngIf="i<=2">
+                <img style="border-radius: 10px;" src="{{hd.houseimg}}">
+                <div class="homeinfo1">
+                    <div class="homeinfo11">
+                <h1 style="font-weight:5px;">{{hd.houseprice}}</h1>
+                <p>{{hd.address}}</p>
+                    </div>
+                    <div>
+                <button class="mat-button2" mat-raised-button color="accent">Buy Now</button>
+                    </div>
+                </div>
+                <div class="homeinfo12">
+                <p style="margin-right: 20px;"><mat-icon>bed</mat-icon>Bedroom:{{hd.bedroom}}</p>
+                <p><mat-icon>bathroom</mat-icon>Bathroom:{{hd.bathroom}}</p>
+                </div>
+                <div class="more">
+                    <button mat-raised-button color="primary">View Details</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="last_button">
+        <button mat-raised-button color="accent">Other Listings<mat-icon>arrow_forward</mat-icon></button>
+    </div>
+</div>

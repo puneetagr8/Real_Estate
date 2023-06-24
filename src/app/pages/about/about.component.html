@@ -1,0 +1,58 @@
+<div class="title">
+    <div class="first">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, error?
+        </p>
+        <h1>
+            THE BEST REAL ESTATE <br> OUT THERE
+        </h1>
+    </div>
+    <div class="second">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, dignissimos consequatur atque tempore nulla velit quo earum. Provident consequatur, non incidunt expedita commodi facilis? Animi consequatur nulla architecto alias ad.
+        </p>
+    </div>
+</div>
+<!-- <div class="cover"> -->
+    <div class="heading">
+        <p>
+            Know the industry
+        </p>
+        <h1>38 years of experience in
+        </h1> 
+        <h1>Real Estate</h1>
+    </div>
+    <div class="features">
+        <section class="sect1">
+            <img src="https://i.pinimg.com/564x/cc/a6/af/cca6af0716c3e1ce3a7e169db39c98ce.jpg">
+            <h1 class="sect1_h">Home is where love resides, memories are created, and dreams come true."</h1>
+        </section>
+        <section class="sect2">
+            <section *ngFor="let ft of feat; index as i">
+                <section class="boc" *ngIf="i<=2">
+                    <h1>{{ft.tagline}}</h1>
+                    <p>{{ft.summery}}</p>
+                </section>
+            </section>
+        </section>
+    </div>
+<!-- </div> -->
+    <div class="introduction">
+    <h1 class="introduction_item">Meet The Estate Family</h1>
+    <p class="introduction_item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugiat laudantium unde explicabo cupiditate perspiciatis nam quibusdam? Possimus voluptatem consequuntur consequatur odio quisquam, ea beatae provident unde, obcaecati alias atque.</p>
+</div>
+<div class="backg">
+    <div class="people">
+        <section *ngFor="let dt of det;index as i">
+                <img src="{{dt.image}}
+                ">
+                <section class= "D" style="background-color: white;">
+                    <H1>
+                        {{dt.name}}
+                    </H1>
+                    <h1>
+                        {{dt.position}}
+                    </h1>
+                </section>
+            </section>
+    </div>
+</div>

@@ -1,0 +1,164 @@
+.banner{
+    background-image: url("banner.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+}
+.banner_content{
+    position: relative;
+    margin-left: 40px;
+    top: 35%;
+}
+.banner_content p{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.banner_content a{
+    margin-top: 10px;
+}
+.filter{
+    box-shadow: 0px 6px 10px -6px grey;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    height: 75px;
+    top: 66%;
+    background-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 30px;
+}
+
+.paragraph{
+    text-align: center;
+    text-decoration-thickness: form-front;
+    font-size: 15px;
+    margin-top:12px;
+    margin-bottom: 7px;
+}
+.mat-button{
+    line-height:28px; 
+    border-radius: 15px;
+}
+.search
+{
+    margin-top: 20px;
+    color:brown;
+    box-shadow: 0px 6px 10px -6px grey;
+}
+.intro{
+    margin-top: 75px;
+    margin-left: 8%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.introduction h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.introduction p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.benifits{
+    margin-top: 40px;
+    font-size: 20px;
+}
+.benifits li{
+    margin-top: 20px;
+}
+
+.introimg{
+    background-image: url("image2.jpg");
+    margin-right: 100px;
+    /* margin-left: 300px; */
+    height: 350px;
+    width: 45%;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    border-radius: 15px;
+}
+.slogon{
+    margin-top: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.homes{
+    margin-left: 10%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.housefield{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.housefield img{
+    width: 300px;
+    height: 200px;
+}
+.homeinfo1{
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.homeinfo11 p{
+    font-size: 15px;
+}
+.homeinfo11 h1{
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.mat-button2{
+    margin-top: 5px;
+    line-height: 30px;
+    border-radius: 15px;
+}
+.homeinfo12{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin-right: 20px;
+    color:brown;
+    /* font-size:; */
+}
+.homeinfo12 p{
+    background-color:#FEF8DD;
+    padding:5px;
+    border-radius: 10px;
+    font-size:15px;
+}
+mat-icon{
+    color:brown;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+}
+.more{
+    text-align: right;
+}
+.last_button{
+    margin: 30px;
+    margin-left: 10%;
+}
+.last_button mat-icon{
+    color: white;
+}

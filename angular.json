@@ -23,6 +23,8 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
+              "C:/academics/angular/mamtaInd/node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.css"
             ],
             "scripts": []
