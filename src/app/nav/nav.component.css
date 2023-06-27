@@ -1,3 +1,30 @@
-.space{
-    flex:1 1 auto;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    overflow: hidden;
+    box-sizing: inherit;
+    justify-content: space-between;
+    padding: 0;
+}
+.navbar {
+    float: right;
+    padding-right: 10px;
+}
+.navbar .icon{
+    display: none;
+}
+@media screen and (max-width:650px){
+    .navbar{
+        position: relative;
+    }
+    .navbar a{
+        display: none;
+    }  
+    .navbar a.icon{
+        float: right;
+        display: block;
+    }
 }

@@ -7,6 +7,7 @@ import { ProjectComponent } from './pages/project/project.component';
 import { ServicesComponent } from './pages/services/services.component';
 
 const routes: Routes = [
+  {path:'', component : HomeComponent},
   {path:'Home', component : HomeComponent},
   {path:'Services',component:ServicesComponent},
   {path:'aboutus',component:AboutComponent},
